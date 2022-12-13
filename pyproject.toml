@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "site-ci"
+version = "0.1.0"
+description = ""
+authors = ["jacksonsr45 <jackson.severino.rocha@escola.pr.gov.br>"]
+license = "GNU"
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.11.1"
+blue = "^0.9.1"
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
